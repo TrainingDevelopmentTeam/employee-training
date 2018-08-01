@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Login.css';
 
 //// IMPORTANT: ///////////////////////////////////////////////////////////
@@ -19,23 +20,9 @@ class Login extends React.Component {
     }
   }
 
-  onEmailChange = (event) => {
-    this.setState({loginEmail: event.target.value})
-  }
 
-  onPasswordChange = (event) => {
-    this.setState({loginPassword: event.target.value})
-  }
-
-  onSubmitLogin = () => {
-    if (credentials.email === this.state.loginEmail 
-      && credentials.password === this.state.loginPassword) {
-      this.props.onRouteChange('Home');
-    }
-  }
 
   render() {
-    const { onRouteChange } = this.props;
     return (
         <article className="">
           <main className="">
@@ -50,7 +37,6 @@ class Login extends React.Component {
                     type="email"
                     name="email-address"
                     id="email-address"
-                    onChange={this.onEmailChange}
                   />
                   <div className="loginInputLabel">Password</div>
                   <label className="" htmlFor="password"></label>
@@ -59,15 +45,15 @@ class Login extends React.Component {
                     type="password"
                     name="password"
                     id="password"
-                    onChange={this.onPasswordChange}
                   />
                   <div>
+                  <NavLink to="/home">
                     <input
                       className="loginButton"
-                      onClick={this.onSubmitLogin}
                       type="submit"
                       value="Log in"
                     />
+                    </NavLink>
                   </div>
                 </div>
               </fieldset>
