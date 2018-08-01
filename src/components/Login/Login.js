@@ -24,6 +24,7 @@ class Login extends React.Component {
 
   render() {
     return (
+      <div className="login-main">
         <article className="">
           <main className="">
             <div className="outerField">
@@ -60,6 +61,7 @@ class Login extends React.Component {
             </div>
           </main>
         </article>
+        </div>
     );
   }
 }
