@@ -34,7 +34,7 @@ class Navigation extends React.Component {
                     <div class="form-inline my-2 my-lg-0">
                         <ul className="navbar-nav" >
                             <li className="nav-item ">
-                                 <a className="nav-link " href="#">Settings</a>
+                                 <a className="nav-link " href="#">Sign Out</a>
                             </li>
                         </ul>
                     </div>

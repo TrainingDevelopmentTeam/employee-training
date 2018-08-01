@@ -1,4 +1,5 @@
 import React from 'react';
+import './page-style/HomePage.css';
 import Navigation from '../components/Navigation';
 
 
@@ -14,7 +15,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="homepage-main">
         <Navigation />
       </div>
     );
