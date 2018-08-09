@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './component-style/Navigation.css';
 
 
@@ -32,11 +33,13 @@ class Navigation extends React.Component {
                     </li>
                     </ul>
                     <div class="form-inline my-2 my-lg-0">
+                      <NavLink to="/">
                         <ul className="navbar-nav" >
                             <li className="nav-item ">
                                  <a className="nav-link " href="#">Sign Out</a>
                             </li>
                         </ul>
+                      </NavLink>
                     </div>
                 </div>
             </nav>
